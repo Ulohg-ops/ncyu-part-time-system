@@ -1,0 +1,60 @@
+.contents{
+	position: relative;
+	top: 20px; 
+	width:1500px;
+	height: 1100px;
+	margin: auto;
+}
+.leftbox{
+	float: left;
+	width:400px;
+	margin: 80px 20px;
+	height: 600px;
+}
+.rightbox{
+	float: left;
+	width: 900px;
+	margin: 20px;
+	position: relative;
+	left: 40px;
+	top: 50px; 
+
+}
+.document{
+	background: #f7f7f7;
+	padding: 10px;
+
+	border-radius: 5px;
+	width: 330px;
+}
+.document.a{
+	text-decoration: none;
+	color: #f7f7f7;
+}
+.link{
+	margin-top:10px ;
+	background: #f7f7f7;
+	padding: 10px;
+	border-radius: 5px;
+	width: 330px;
+}
+.telephone{
+	margin-top:10px ;
+	background: #f7f7f7;
+	padding: 10px;
+	border-radius: 5px;
+	width: 330px;
+}
+ul{
+	list-style: none;
+
+}
+.li.a{
+	text-decoration:none;
+	color: #000000;
+}
+
+.telfont{
+color: #007bff;
+margin: 5px	;
+}

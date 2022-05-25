@@ -1,0 +1,238 @@
+  *{
+    margin: 0;
+    padding: 0;
+  }
+  .banner{
+ 
+  }
+  .title2{
+   font-size: 20px;
+   font-weight: 500;
+
+ }  
+ .grade_placeholder{  /*成績欄位提示文字*/
+  padding-left:12px;
+}
+.error{
+  text-align: center;
+  background: #fff;
+  color: #A94442;
+  padding: 10px;
+  width: 95%;
+  border-radius: 5px;
+  margin: 20px auto;
+  font-size: 20px;
+}
+.container{
+  max-width: 700px;
+  background-color: #fff;
+  padding: 25px 30px;
+  border-radius: 5px;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.15);
+  margin:60px auto;
+}
+.container .title{
+  font-size: 25px;
+  font: 500;  
+  position: relative;
+}
+.container .title::before{
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 3px;
+  width: 30px;
+  border-radius: 5px;
+  background: linear-gradient(135deg, #71b7e6, #9b59b6);
+}
+/*--------------user detailes---------*/
+.content form .user-details{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin:0 0 12px 0;
+}
+
+form .user-details .input-box{
+
+  margin:20px 0 12px 0;
+  width: calc(100% / 2 - 20px);
+}
+form .input-box span.details{
+  display: block;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+.user-details .input-box input{
+  height: 45px;
+  width: 100%;
+  outline: none;
+  font-size: 16px;
+  border-radius: 5px;
+  padding-left: 15px;
+  border: 1px solid #ccc;
+  border-bottom-width: 2px;
+  transition: all 0.3s ease;
+}
+
+
+.user-details .input-box input:focus{
+  border-color: #9b59b6;
+}
+
+/*----------end----user detailes---------*/
+
+
+/*----------- -  user grade    -----------*/
+.content form .user-grades{
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+}
+
+form .user-grades .input-box{
+
+  margin:20px 0 20px 0;
+  width: calc(100% / 2 - 20px);
+}
+form .input-box span.grade{
+  display: block;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+.user-grades .input-box input{
+  height: 45px;
+  width: 80px;
+  outline: none;
+  font-size: 16px;
+  border-radius: 5px;
+  padding-left:80 ;
+  border: 1px solid #ccc;
+  border-bottom-width: 2px;
+  transition: all 0.3s ease;
+}
+.user-grades .input-box input:focus{
+  border-color: #9b59b6;
+}
+/*-------- end user grade------*/
+form .gender-details .gender-title{
+  font-size: 20px;
+  font-weight: 500;
+}
+form .quality-details .quality-title{
+  font-size: 20px;
+  font-weight: 500;
+}
+form .able-time-details .able-time-title{
+  font-size: 20px;
+  font-weight: 500;
+}
+form .work-department-details .work-department-title{
+  font-size: 20px;
+  font-weight: 500;
+}
+
+
+form .category{
+ display: flex;
+ flex-wrap: wrap; /*超出範圍就換行*/
+ width: 80%;
+ margin: 14px  ;
+ justify-content: space-between;
+}
+  form .category label{
+   display: flex;
+   align-items: center;
+   cursor: pointer;
+ }
+ form .category label .dot{
+  height: 18px;
+  width: 18px;
+  border-radius: 50%;
+  margin-right: 10px;
+  background: #d9d9d9;
+  border: 5px solid transparent;
+  transition: all 0.3s ease;
+}
+/*「~」和「+」差異在:
+「~」來控制後面所有元件，與「+」只控制後面第一個元件*/
+#dot-1:checked ~ .category label .one,
+#dot-2:checked ~ .category label .two{
+ background: #9b59b6;
+ border-color: #d9d9d9;
+}
+
+#dot-3:checked ~ .category label .three,
+#dot-4:checked ~ .category label .four{
+ background: #9b59b6;
+ border-color: #d9d9d9;
+}
+#dot-5:checked ~ .category label .five,
+#dot-6:checked ~ .category label .six,
+#dot-7:checked ~ .category label .seven{
+ background: #9b59b6;
+ border-color: #d9d9d9;
+}
+
+#dot-8:checked ~ .category label .eight,
+#dot-9:checked ~ .category label .nine,
+#dot-10:checked ~ .category label .ten,
+#dot-11:checked ~ .category label .eleven,
+#dot-12:checked ~ .category label .twelve,
+#dot-13:checked ~ .category label .thirteen
+{
+ background: #9b59b6;
+ border-color: #d9d9d9;
+}
+
+
+form input[type="radio"]{
+ display: none;
+}
+form input[type="checkbox"]{
+ display: none;
+}
+
+
+/*---繳交按鈕--------*/
+form .button{
+ height: 45px;
+ margin: 35px 0;
+}
+form .button input{ 
+ height: 100%;
+ width: 100%;
+ border-radius: 5px;
+ border: none;
+ color: #fff;
+ font-size: 18px;
+ font-weight: 500;
+ letter-spacing: 1px;
+ cursor: pointer;
+ transition: all 0.3s ease;
+ background: linear-gradient(135deg, #71b7e6, #9b59b6);
+}
+form .button input:hover{ 
+   transform: scale(0.99); 
+  background: linear-gradient(-135deg, #71b7e6, #9b59b6);
+}
+/*-------------繳交按鈕--------*/
+@media(max-width: 700px){
+ .container{
+  max-width: 100%;
+}
+form .user-details .input-box{
+  margin-bottom: 15px;
+  width: 100%;
+}
+form .category{
+  width: 100%;
+}
+.content form .user-details{
+  max-height: 700px;
+  overflow-y: scroll;
+}
+.user-details::-webkit-scrollbar{
+  width: 5px;
+}
